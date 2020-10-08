@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     //color azul mas pequeno x por defecto, el primer azul del toollbar
     FlutterStatusbarcolor.setStatusBarColor(Colors.white);
     return MaterialApp(
-      title: 'dartspace',
+      //title: 'dartspace',
       debugShowCheckedModeBanner: false,
       home: WelcomePage(),
     );

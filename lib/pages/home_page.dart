@@ -1,11 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:dartspace/tabs/home_tab.dart';
 import 'package:dartspace/tabs/friends_tab.dart';
 import 'package:dartspace/tabs/watch_tab.dart';
 import 'package:dartspace/tabs/profile_tab.dart';
 import 'package:dartspace/tabs/notifications_tab.dart';
 import 'package:dartspace/tabs/menu_tab.dart';
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -33,6 +33,7 @@ class _HomePageState extends State<HomePage>
     return Scaffold(
       appBar: AppBar(
         brightness: Brightness.light,
+        automaticallyImplyLeading: false, //Quita flecha para atras
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
