@@ -1,9 +1,9 @@
-//import 'package:dartspace/tabs/home_tab.dart';
-//import 'package:dartspace/tabs/friends_tab.dart';
-//import 'package:dartspace/tabs/watch_tab.dart';
-//import 'package:dartspace/tabs/profile_tab.dart';
-//import 'package:dartspace/tabs/notifications_tab.dart';
-//import 'package:dartspace/tabs/menu_tab.dart';
+import 'package:dartspace/tabs/home_tab.dart';
+import 'package:dartspace/tabs/friends_tab.dart';
+import 'package:dartspace/tabs/watch_tab.dart';
+import 'package:dartspace/tabs/profile_tab.dart';
+import 'package:dartspace/tabs/notifications_tab.dart';
+import 'package:dartspace/tabs/menu_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage>
           children: <Widget>[
             Row(
               children: <Widget>[
-                Text('Dartspace',
+                Text('dartspace',
                     style: TextStyle(
                         color: Colors.blueAccent,
                         fontSize: 27.0,
@@ -70,18 +70,12 @@ class _HomePageState extends State<HomePage>
         ),
       ),
       body: TabBarView(controller: _tabController, children: [
-        //HomeTab(),
-        //FriendsTab(),
-        //WatchTab(),
-        //ProfileTab(),
-        //NotificationsTab(),
-        //MenuTab()
-        Text(''),
-        Text(''),
-        Text(''),
-        Text(''),
-        Text(''),
-        Text(''),
+        HomeTab(),
+        FriendsTab(),
+        WatchTab(),
+        ProfileTab(),
+        NotificationsTab(),
+        MenuTab()
       ]),
     );
   }
